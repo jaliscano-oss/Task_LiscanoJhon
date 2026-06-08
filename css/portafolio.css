@@ -48,6 +48,7 @@
 }
 
 
+
 /* ============================================================
    BLOQUE 3: ASIDE DEL PORTAFOLIO
    Selector de ID: #aside-portafolio
@@ -391,6 +392,11 @@
    ============================================================ */
 
 @media (max-width: 700px) {
+
+    #nav-portaf {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     /* El grid de proyectos se pone en columna */
     #grid-proyectos {
