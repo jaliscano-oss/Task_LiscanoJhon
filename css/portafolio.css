@@ -1,0 +1,430 @@
+/* ============================================================
+   portafolio.css
+   Estilos exclusivos para portafolio.html.
+   Debe cargarse después de general.css.
+
+   Contiene selectores de clase e identificadores (IDs) propios
+   de la página de portafolio.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: ENCABEZADO DEL PORTAFOLIO
+   Selector de ID: #portafolio-header
+   Se personaliza el color del encabezado para esta página.
+   ============================================================ */
+
+#portafolio-header {
+    background: linear-gradient(135deg, #0d1910 0%, #1b7505 100%);
+    color: white;
+    padding: 36px 16px;
+}
+
+#portafolio-header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+#portafolio-header i {
+    color: #dba112;
+    margin-right: 10px;
+}
+
+
+/* ============================================================
+   BLOQUE 2: ENLACE ACTIVO EN NAVEGACIÓN
+   Selector de ID: #nav-portafolio
+   Resalta el enlace de la página actual en el menú.
+   ============================================================ */
+
+#nav-portafolio {
+    background-color: #0d1910;
+    color: white !important;
+    border-color: #0d1910;
+}
+
+#nav-portafolio:hover {
+    background-color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 3: ASIDE DEL PORTAFOLIO
+   Selector de ID: #aside-portafolio
+   Personaliza el bloque lateral informativo.
+   ============================================================ */
+
+#aside-portafolio {
+    border-left: 6px solid #1b7505;
+    background-color: #f7fff4;
+}
+
+#aside-portafolio i {
+    color: #dba112;
+    margin-right: 8px;
+}
+
+
+/* ============================================================
+   BLOQUE 4: SECCIÓN PERFIL
+   Selector de ID: #perfil
+   Diseño especial para la sección de presentación personal.
+   ============================================================ */
+
+#perfil {
+    border-left: 8px solid #1b7505;
+    background-color: #f7fff4;
+}
+
+/* Contenedor flex para imagen y texto del perfil */
+#perfil-contenido {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+/* Texto del lado derecho del perfil */
+#perfil-texto {
+    flex: 1;
+    min-width: 220px;
+}
+
+
+/* ============================================================
+   BLOQUE 5: SECCIÓN PROYECTOS
+   Selector de ID: #proyectos
+   Identifica la sección de tarjetas de proyectos.
+   ============================================================ */
+
+#proyectos {
+    border-left: 8px solid #dba112;
+}
+
+/* Grid de tarjetas de proyectos */
+#grid-proyectos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+
+/* ============================================================
+   BLOQUE 6: TARJETAS DE PROYECTO
+   Selector de clase: .tarjeta-proyecto
+   Estilo compartido para las tres tarjetas de proyecto.
+   ============================================================ */
+
+.tarjeta-proyecto {
+    flex: 1;
+    min-width: 230px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(27, 117, 5, 0.18);
+    border-color: #1b7505;
+}
+
+.tarjeta-proyecto h3 {
+    color: #0d1910;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.tarjeta-proyecto ul {
+    font-size: 14px;
+    color: #444444;
+    padding-left: 20px;
+}
+
+.tarjeta-proyecto li {
+    margin-bottom: 5px;
+}
+
+
+/* ============================================================
+   BLOQUE 7: ÍCONOS DE TARJETA
+   Selector de clase: .card-icono
+   Círculo de color con el ícono representativo de cada tarjeta.
+   ============================================================ */
+
+.card-icono {
+    width: 54px;
+    height: 54px;
+    background-color: #f7fff4;
+    border: 2px solid #1b7505;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #1b7505;
+    margin-bottom: 6px;
+}
+
+/* Variante dorada para CSS */
+.card-icono--css {
+    background-color: #fff8e6;
+    border-color: #dba112;
+    color: #dba112;
+}
+
+/* Variante oscura para responsivo */
+.card-icono--resp {
+    background-color: #f4f6f8;
+    border-color: #0d1910;
+    color: #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 8: IDENTIFICADORES DE CARDS INDIVIDUALES
+   IDs únicos para cada tarjeta de proyecto.
+   Permiten estilos exclusivos si se necesita en el futuro.
+   ============================================================ */
+
+#card-html {
+    border-top: 4px solid #1b7505;
+}
+
+#card-css {
+    border-top: 4px solid #dba112;
+}
+
+#card-responsivo {
+    border-top: 4px solid #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 9: BADGES / ETIQUETAS DE TECNOLOGÍA
+   Selector de clase: .badge
+   Pequeña etiqueta visual al pie de cada tarjeta.
+   ============================================================ */
+
+.badge {
+    display: inline-block;
+    background-color: #1b7505;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+}
+
+.badge--css {
+    background-color: #dba112;
+    color: #0d1910;
+}
+
+.badge--resp {
+    background-color: #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 10: SECCIÓN DE HABILIDADES
+   Selector de ID: #habilidades
+   Tabla de progreso de aprendizaje.
+   ============================================================ */
+
+#habilidades {
+    border-left: 8px solid #0d1910;
+}
+
+/* Niveles de habilidad: clases de color */
+.nivel {
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.nivel--alto {
+    background-color: #f7fff4;
+    color: #1b7505;
+    border: 1px solid #1b7505;
+}
+
+.nivel--medio {
+    background-color: #fff8e6;
+    color: #a07a00;
+    border: 1px solid #dba112;
+}
+
+.nivel--basico {
+    background-color: #f4f6f8;
+    color: #555555;
+    border: 1px solid #a8a8a7;
+}
+
+/* Progreso dentro de la tabla */
+#habilidades progress {
+    width: 120px;
+    height: 14px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#habilidades span {
+    font-size: 13px;
+    color: #0d1910;
+    font-weight: bold;
+}
+
+
+/* ============================================================
+   BLOQUE 11: SECCIÓN METAS PROFESIONALES
+   Selector de ID: #metas
+   Grid de metas con icono y descripción.
+   ============================================================ */
+
+#metas {
+    border-left: 8px solid #dba112;
+    background-color: #fff8e6;
+}
+
+#grid-metas {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+/* Tarjetas de metas */
+.meta-card {
+    flex: 1;
+    min-width: 180px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: border-color 0.2s ease;
+}
+
+.meta-card:hover {
+    border-color: #dba112;
+}
+
+.meta-card h3 {
+    font-size: 15px;
+    color: #0d1910;
+    margin: 10px 0 8px;
+}
+
+.meta-card p {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* Ícono de meta */
+.meta-icono {
+    font-size: 32px;
+    color: #1b7505;
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+/* ============================================================
+   BLOQUE 12: SECCIÓN PROCESO DE APRENDIZAJE
+   Selector de ID: #aprendizaje
+   Personaliza los detalles desplegables de esta sección.
+   ============================================================ */
+
+#aprendizaje details {
+    background-color: white;
+    border: 1px solid #1b7505;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#aprendizaje summary {
+    color: #0d1910;
+    font-weight: bold;
+}
+
+#aprendizaje details p {
+    color: #444444;
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   BLOQUE 13: SECCIÓN REFLEXIÓN
+   Selector de ID: #reflexion
+   ============================================================ */
+
+#reflexion {
+    background-color: #f7fff4;
+    border-left: 8px solid #1b7505;
+}
+
+#reflexion .nota {
+    font-style: italic;
+    font-size: 15px;
+}
+
+#reflexion .nota i {
+    color: #1b7505;
+    margin-right: 6px;
+}
+
+
+/* ============================================================
+   BLOQUE 14: DISEÑO RESPONSIVO DEL PORTAFOLIO
+   Media queries específicas para portafolio.html.
+   Se aplican cuando el ancho es de 700px o menos.
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    /* El grid de proyectos se pone en columna */
+    #grid-proyectos {
+        flex-direction: column;
+    }
+
+    /* El perfil se muestra en columna (imagen arriba, texto abajo) */
+    #perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* El grid de metas también en columna */
+    #grid-metas {
+        flex-direction: column;
+    }
+
+    /* Las tarjetas de proyecto ocupan todo el ancho */
+    .tarjeta-proyecto {
+        min-width: 100%;
+    }
+
+    /* Las metas ocupan todo el ancho */
+    .meta-card {
+        min-width: 100%;
+    }
+
+    /* El encabezado reduce el tamaño */
+    #portafolio-header h1 {
+        font-size: 26px;
+    }
+
+    /* El progreso de la tabla ocupa más espacio en móvil */
+    #habilidades progress {
+        width: 80px;
+    }
+}

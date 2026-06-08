@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Jhon Liscano</title>
+
+    <!-- Ícono de la pestaña del navegador -->
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+
+    <!-- Librería externa para usar íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal de la página de portafolio -->
+    <header id="portafolio-header">
+        <h1>
+            <i class="fa-solid fa-briefcase"></i>
+            Portafolio Profesional
+        </h1>
+        <p>Jhon Anderson Liscano Carbo — Ingeniería en Tecnologías de la Información</p>
+    </header>
+
+    <!-- Menú de navegación con enlace de regreso a inicio -->
+    <nav>
+        <a class="class_btn_nav_1" href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a class="class_btn_nav_1" href="portafolio.html" id="nav-portafolio">
+            <i class="fa-solid fa-briefcase"></i>
+            Portafolio
+        </a>
+
+        <a class="class_btn_nav_2" href="#perfil">Perfil</a>
+
+        <a class="class_btn_nav_2" href="#proyectos">Proyectos</a>
+
+        <a class="class_btn_nav_3" href="#habilidades">Habilidades</a>
+
+        <a class="class_btn_nav_3" href="../pages/buscar.html">Buscar</a>
+
+        <a class="class_btn_nav_3" href="../pages/cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+
+    <!-- Contenido complementario lateral -->
+    <aside id="aside-portafolio">
+        <h2>Acerca de este portafolio</h2>
+        <p>
+            Este portafolio fue desarrollado como parte de la asignatura
+            <strong>Fundamentos de Sistemas Web</strong> en la Universidad de las
+            Fuerzas Armadas ESPE, sede Santo Domingo.
+        </p>
+        <p>
+            <i class="fa-solid fa-calendar-days"></i>
+            Período: abril - agosto 2026
+        </p>
+        <p>
+            <i class="fa-solid fa-graduation-cap"></i>
+            Cuarto nivel — NRC 29535
+        </p>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección introductoria / Perfil -->
+        <section id="perfil">
+            <h2>
+                <i class="fa-solid fa-user-circle"></i>
+                Perfil Personal
+            </h2>
+
+            <div id="perfil-contenido">
+                <figure>
+                    <img src="../img/espe/imagenEjemploEspe.png" alt="Logo ESPE" width="220">
+                    <figcaption>Universidad de las Fuerzas Armadas ESPE</figcaption>
+                </figure>
+
+                <div id="perfil-texto">
+                    <p>
+                        Mi nombre es <strong>Jhon Anderson Liscano Carbo</strong>. Soy estudiante
+                        de cuarto nivel de la carrera de Ingeniería en Tecnologías de la Información
+                        en la ESPE sede Santo Domingo.
+                    </p>
+
+                    <p>
+                        Este portafolio presenta mi proceso de aprendizaje en desarrollo web,
+                        los proyectos realizados durante el curso y las habilidades adquiridas
+                        en HTML, CSS y diseño responsivo.
+                    </p>
+
+                    <p class="nota">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Santo Domingo de los Tsáchilas, Ecuador.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artículos / Cards de proyectos -->
+        <section id="proyectos">
+            <h2>
+                <i class="fa-solid fa-folder-open"></i>
+                Proyectos Realizados
+            </h2>
+
+            <div id="grid-proyectos">
+
+                <!-- Card 1 -->
+                <article class="tarjeta-proyecto" id="card-html">
+                    <div class="card-icono">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3>Práctica HTML Semántico</h3>
+                    <p>
+                        Desarrollo de una página web completa usando etiquetas semánticas de HTML5:
+                        <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>,
+                        <code>article</code>, <code>footer</code> y más.
+                    </p>
+                    <ul>
+                        <li>Estructura semántica completa</li>
+                        <li>Formularios con validación</li>
+                        <li>Multimedia: video, audio, iframe</li>
+                        <li>Rutas relativas entre páginas</li>
+                    </ul>
+                    <span class="badge">HTML5</span>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="tarjeta-proyecto" id="card-css">
+                    <div class="card-icono card-icono--css">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h3>Práctica CSS Final</h3>
+                    <p>
+                        Aplicación de estilos avanzados mediante CSS externo, clases e identificadores.
+                        Implementación de Flexbox, Box Model y diseño responsivo con media queries.
+                    </p>
+                    <ul>
+                        <li>CSS externo modular por página</li>
+                        <li>Selectores de clase e ID</li>
+                        <li>Flexbox para maquetación</li>
+                        <li>Media queries responsivas</li>
+                    </ul>
+                    <span class="badge badge--css">CSS3</span>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="tarjeta-proyecto" id="card-responsivo">
+                    <div class="card-icono card-icono--resp">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Diseño Responsivo</h3>
+                    <p>
+                        Adaptación del sitio web para diferentes tamaños de pantalla
+                         mediante diseño responsivo utilizando media queries.
+                    </p>
+                    <ul>
+                        <li>Breakpoint en 700px</li>
+                        <li>Menú adaptable en columna</li>
+                        <li>Imágenes fluidas (max-width: 100%)</li>
+                        <li>Formularios con width: 100%</li>
+                    </ul>
+                    <span class="badge badge--resp">Responsivo</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección con tabla de habilidades -->
+        <section id="habilidades">
+            <h2>
+                <i class="fa-solid fa-chart-bar"></i>
+                Habilidades y Progreso de Aprendizaje
+            </h2>
+
+            <table>
+                <caption>Resumen de habilidades adquiridas — Período 202650</caption>
+
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Progreso</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Estructura semántica</td>
+                        <td>HTML5</td>
+                        <td class="nivel nivel--alto">Avanzado</td>
+                        <td>
+                            <progress value="90" max="100"></progress>
+                            <span>90%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Selectores CSS</td>
+                        <td>CSS3</td>
+                        <td class="nivel nivel--alto">Avanzado</td>
+                        <td>
+                            <progress value="85" max="100"></progress>
+                            <span>85%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Flexbox</td>
+                        <td>CSS3</td>
+                        <td class="nivel nivel--medio">Intermedio</td>
+                        <td>
+                            <progress value="75" max="100"></progress>
+                            <span>75%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Box Model</td>
+                        <td>CSS3</td>
+                        <td class="nivel nivel--alto">Avanzado</td>
+                        <td>
+                            <progress value="88" max="100"></progress>
+                            <span>88%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Diseño Responsivo</td>
+                        <td>Media Queries</td>
+                        <td class="nivel nivel--medio">Intermedio</td>
+                        <td>
+                            <progress value="70" max="100"></progress>
+                            <span>70%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Formularios HTML</td>
+                        <td>HTML5</td>
+                        <td class="nivel nivel--alto">Avanzado</td>
+                        <td>
+                            <progress value="80" max="100"></progress>
+                            <span>80%</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de metas profesionales -->
+        <section id="metas">
+            <h2>
+                <i class="fa-solid fa-bullseye"></i>
+                Metas Profesionales
+            </h2>
+
+            <div id="grid-metas">
+
+                <article class="meta-card">
+                    <i class="fa-solid fa-code meta-icono"></i>
+                    <h3>Desarrollo Full Stack</h3>
+                    <p>
+                        Dominar tecnologías front-end y back-end para crear aplicaciones
+                        web completas y escalables.
+                    </p>
+                </article>
+
+                <article class="meta-card">
+                    <i class="fa-solid fa-shield-halved meta-icono"></i>
+                    <h3>Ciberseguridad</h3>
+                    <p>
+                        Aprender buenas prácticas de seguridad para proteger
+                        aplicaciones y datos de usuarios.
+                    </p>
+                </article>
+
+                <article class="meta-card">
+                    <i class="fa-solid fa-cloud meta-icono"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>
+                        Implementar y desplegar aplicaciones en la nube usando
+                        plataformas como AWS o Azure.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección de proceso de aprendizaje con detalles desplegables -->
+        <section id="aprendizaje">
+            <h2>
+                <i class="fa-solid fa-book-open"></i>
+                Proceso de Aprendizaje en Desarrollo Web
+            </h2>
+
+            <details>
+                <summary>Unidad 1 — Fundamentos de HTML</summary>
+                <p>
+                    Se aprendió la estructura básica de un documento HTML, etiquetas semánticas,
+                    listas, tablas, formularios, multimedia (audio, video, iframe) y rutas
+                    relativas entre páginas. Se practicó la organización de proyectos en carpetas.
+                </p>
+            </details>
+
+            <details>
+                <summary>Unidad 2 — Fundamentos de CSS</summary>
+                <p>
+                    Se aplicaron estilos visuales usando CSS externo. Se practicaron selectores
+                    de etiqueta, clase e ID. Se comprendió el Box Model (margen, borde, relleno,
+                    contenido), Flexbox para maquetación y media queries para diseño responsivo.
+                </p>
+            </details>
+
+            <details>
+                <summary>Proyecto Final — PracticaCSSFinal</summary>
+                <p>
+                    Desarrollo completo de un sitio web multi-página con diseño visual coherente,
+                    navegación entre páginas, CSS modular por archivo y adaptación responsiva
+                    para dispositivos móviles y escritorio.
+                </p>
+            </details>
+        </section>
+
+        <!-- Sección de reflexión personal -->
+        <section id="reflexion">
+            <h2>
+                <i class="fa-solid fa-lightbulb"></i>
+                Reflexión Personal
+            </h2>
+
+            <p>
+                Durante este período aprendí que el desarrollo web es mucho más que escribir código:
+                es entender al usuario y pensar en cómo este interactuará con la página desde
+                cualquier dispositivo.
+            </p>
+
+            <p>
+                El mayor desafío fue comprender el Box Model y cómo los márgenes, bordes y
+                rellenos afectan el diseño. Con práctica constante, logré aplicar estos conceptos
+                de manera efectiva en el proyecto final.
+            </p>
+
+            <p class="nota">
+                <i class="fa-solid fa-quote-left"></i>
+                "El diseño web no se trata solo de hacer que las cosas se vean bien,
+                sino de hacer que funcionen bien para todos."
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Jhon Anderson Liscano Carbo.</p>
+        <p>Fundamentos de Sistemas Web — ESPE Sede Santo Domingo.</p>
+
+        <address>
+            Santo Domingo de los Tsáchilas, Ecuador<br>
+            NRC: 29535 — Docente: Ing. Geovanny Brito
+        </address>
+    </footer>
+
+</body>
+
+</html>
